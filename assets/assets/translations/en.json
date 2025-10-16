@@ -1,0 +1,161 @@
+{
+  "general": {
+    "more": "More",
+    "next": "Next",
+    "retry": "Retry"
+  },
+  "errors": {
+    "general": {
+      "connection": "A connection error occurred",
+      "unknown": "An unknown error occurred",
+      "notFound": "Object not found",
+      "emailNotConfirmed": "Email not confirmed",
+      "userNotFound": "User not found",
+      "codeNotExists": "Code does not exist",
+      "noPermission": "Access denied",
+      "wrongToken": "Authorization error",
+      "wrongPassword": "Incorrect password",
+      "noAccessToken": "Authorization required",
+      "codeExpired": "Code expired",
+      "tooManyEmailSent": "Too many emails sent, please wait a while",
+      "tooManyTries": "Too many attempts, try again later",
+      "tokenExpired": "Unauthorized",
+      "writeOffPending": "Your previous request has not yet been approved."
+    },
+    "auth": {
+      "wrongCredentials": "Incorrect credentials",
+      "emailAlreadySignedUp": "This email address is already registered",
+      "emailNotFound": "This email address is not registered",
+      "wrongCode": "Incorrect code"
+    }
+  },
+  "validation": {
+    "invalidEmail": "Invalid email address",
+    "invalidPassword": "Invalid password",
+    "emptyEmail": "Please provide an email address",
+    "emptyPassword": "Please provide a password",
+    "passwordsAreNotSame": "Passwords do not match",
+    "emptyCode": "Please enter the code from the email"
+  },
+  "login": {
+    "title": "Log In",
+    "emailLabel": "Email",
+    "passwordLabel": "Password",
+    "loginButton": "Log In",
+    "forgotPasswordLabel": "Forgot password?",
+    "resetPasswordButton": "Reset",
+    "signUpLabel": "Don't have an account?",
+    "signUpButton": "Sign Up"
+  },
+  "signUp": {
+    "title": "Sign Up",
+    "repeatPasswordLabel": "Repeat Password",
+    "signUpButton": "Sign Up",
+    "loginButtonLabel": "Already have an account?",
+    "loginButton": "Log In",
+    "conditions_1": "By registering, I agree to the ",
+    "conditions_2": "privacy policy",
+    "acceptConditionsRequired": "Your acceptance of the terms is required",
+    "userName": "Your name"
+  },
+  "resetPassword": {
+    "title": "Reset Password",
+    "emailFieldLabel": "Enter your email address",
+    "resetPasswordButton": "Send reset link",
+    "sendLinkSuccess": "We have sent a password reset link to your email. Please check your email and follow the link.",
+    "backButton": "Back"
+  },
+  "resetPasswordCode": {
+    "title": "Reset Password",
+    "passwordLabel": "Enter new password",
+    "repeatPasswordLabel": "Repeat password",
+    "resetPasswordButton": "Reset password",
+    "codeSent": "We have sent an email with a code to your email. Please enter the received code here",
+    "code": "Code from email"
+  },
+  "profile": {
+    "title": "Settings",
+    "signOut": "Sign Out",
+    "authInfo": "You are logged in as {}",
+    "notAuthorized": "You are not logged in",
+    "authButton": "Log In",
+    "colorScheme": {
+      "title": "Color Scheme",
+      "device": "As on device",
+      "light": "Light",
+      "dark": "Dark"
+    },
+    "notifications": {
+      "title": "Notifications",
+      "email": "Email notifications",
+      "push": "Push notifications",
+      "pushSubtitle": "Notifications on this device"
+    },
+    "actions": {
+      "title": "Actions",
+      "removeAccount": "Delete account",
+      "privacyPolicy": "Privacy Policy",
+      "about": "About the app"
+    }
+  },
+  "menu": {
+    "home": "Home",
+    "explore": "Explore",
+    "profile": "Profile"
+  },
+  "home": {
+    "nothingFound": "\uD83D\uDC40 Nothing found"
+  },
+  "removeAccount": {
+    "title": "Data Deletion",
+    "message_1": "##### We have sent a code to your email, which you should enter below.\nPlease note that after completing this operation, all your data will be deleted ***without the possibility of recovery***.",
+    "input_field_1": "Code from the email",
+    "instruction": "Select the events you want to delete along with the account",
+    "action_1": "Delete all data",
+    "confirmation": "Your data has been successfully deleted"
+  },
+  "imagePicker": {
+    "upload": "Upload image",
+    "remove": "Remove"
+  },
+  "locationPicker": {
+    "hint": "Search for a place"
+  },
+  "about": {
+    "title": "About the app",
+    "text": "#### Contacts you can use to reach us:\n\nEmail: [support@owncup.eu](mailto:support@owncup.eu)\n\n"
+  },
+  "permissions": {
+    "locationDescription": "Click here to display the distance to event locations"
+  },
+  "unsubscribe": {
+    "title": "Unsubscribe from notifications",
+    "text": "Email notifications for your account have been disabled. You can enable them back or configure other notifications in the [settings](https://jomo.events/profile)."
+  },
+  "createPlace": {
+    "title": "Create place",
+    "name": "Name",
+    "titleEmpty": "Place name is required",
+    "placeEmpty": "You need to choose a location from the list",
+    "orgEmpty": "Confirm that you are the organizer",
+    "org": "I confirm that I am the organizer of the place or a representative of the organizer",
+    "createButton": "Create place",
+    "businessHoursFormField": {
+      "title": "Open hours",
+      "openCheckboxLabel": "Open",
+      "openTIme": "Open Time",
+      "closeTime": "Close Time",
+      "selectTime": "Select Time",
+      "validationErrors": {
+        "openBeforeClose": "The opening time must be less than the closing time"
+      }
+    },
+    "holidayFormField": {
+      "title": "Weekends",
+      "day": "Day",
+      "month": "Month",
+      "year": "Year",
+      "addButton": "Add"
+    }
+  }
+}
