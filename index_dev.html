@@ -196,13 +196,13 @@
     }
 
     uri.protocol = "owncup";
-    uri.host = "owncup.eu";
+    uri.host = "app-dev.owncup.eu";
     uri.searchParams.set("redirect", "true");
     var finalLocation = uri.toString();
 
     if (query.href.includes("localhost")) {
       //for test purposes on localhost
-      finalLocation = "owncup://owncup.eu/about?redirect=true";
+      finalLocation = "owncup://app-dev.owncup.eu/about?redirect=true";
     }
 
 

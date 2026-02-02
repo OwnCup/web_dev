@@ -2,7 +2,18 @@
   "general": {
     "more": "More",
     "next": "Next",
-    "retry": "Retry"
+    "retry": "Retry",
+    "ok": "OK",
+    "cancel": "Cancel",
+    "details": "Details",
+    "or": "Or",
+    "dismiss": "Dismiss",
+    "share": "Share",
+    "save": "Save",
+    "add": "Add",
+    "apply": "Apply",
+    "buy": "Buy",
+    "go": "Go"
   },
   "errors": {
     "general": {
@@ -35,7 +46,8 @@
     "emptyEmail": "Please provide an email address",
     "emptyPassword": "Please provide a password",
     "passwordsAreNotSame": "Passwords do not match",
-    "emptyCode": "Please enter the code from the email"
+    "emptyCode": "Please enter the code from the email",
+    "invalidEmailWithValue": "Invalid email: {}"
   },
   "login": {
     "title": "Log In",
@@ -55,8 +67,18 @@
     "loginButton": "Log In",
     "conditions_1": "By registering, I agree to the ",
     "conditions_2": "privacy policy",
+    "conditions_3": " and the ",
+    "conditions_4": "public offer contract",
     "acceptConditionsRequired": "Your acceptance of the terms is required",
-    "userName": "Your name"
+    "acceptConditionsRequiredForSocial": "Please accept the terms and conditions to continue with social login",
+    "userName": "Your name",
+    "contractDownload": {
+      "title": "Download Contract",
+      "description": "Choose the language version of the public offer contract:",
+      "english": "English version",
+      "bulgarian": "Bulgarian version",
+      "cancel": "Cancel"
+    }
   },
   "resetPassword": {
     "title": "Reset Password",
@@ -104,7 +126,12 @@
     "profile": "Profile"
   },
   "home": {
-    "nothingFound": "\uD83D\uDC40 Nothing found"
+    "nothingFound": "\uD83D\uDC40 Nothing found",
+    "welcome": "Welcome to OwnCup!",
+    "observeNow": "Observe places now",
+    "description": "With the help of this app, you can participate in various promotions that are held by different cafes.",
+    "loginToContinue": "Log in to continue",
+    "checkNearby": "Or check out the places near you right now"
   },
   "removeAccount": {
     "title": "Data Deletion",
@@ -123,14 +150,30 @@
   },
   "about": {
     "title": "About the app",
-    "text": "#### Contacts you can use to reach us:\n\nEmail: [support@owncup.eu](mailto:support@owncup.eu)\n\n"
+    "text": "#### Contacts you can use to reach us:\n\nEmail: [support@owncup.eu](mailto:support@owncup.eu)\n\n",
+    "urlSelection": "URL Selection",
+    "dev": "Dev",
+    "production": "Production",
+    "selectedUrl": "Selected URL: {}"
   },
   "permissions": {
-    "locationDescription": "Click here to display the distance to event locations"
+    "locationDescription": "Click here to display the distance to event locations",
+    "locationCard": {
+      "title": "Grant the location permission",
+      "dismiss": "Dismiss",
+      "grant": "Grant Permission",
+      "description": "Location access is needed to show the list of offers from nearby locations"
+    },
+    "notificationCard": {
+      "title": "Grant notification permission",
+      "description": "Please grant the app access to notifications so we can send you notifications about events you've added to favorites",
+      "dismiss": "Close",
+      "grant": "Grant access"
+    }
   },
   "unsubscribe": {
     "title": "Unsubscribe from notifications",
-    "text": "Email notifications for your account have been disabled. You can enable them back or configure other notifications in the [settings](https://jomo.events/profile)."
+    "text": "Email notifications for your account have been disabled. You can enable them back or configure other notifications in the [settings](https://app.owncup.eu/settings)."
   },
   "createPlace": {
     "title": "Create place",
@@ -140,6 +183,17 @@
     "orgEmpty": "Confirm that you are the organizer",
     "org": "I confirm that I am the organizer of the place or a representative of the organizer",
     "createButton": "Create place",
+    "addPlaceAppBar": "Add Place",
+    "addPlaceButton": "Add Place",
+    "ownerConfirmShort": "I am the owner or his representative",
+    "accessEmailsLabel": "Access for users with emails: ",
+    "contactsDescription": "Please provide your contacts so we can get in touch with you",
+    "contactsRequired": "Please provide your contacts",
+    "ownerName": "Name",
+    "ownerPhone": "Phone number",
+    "ownerPhoneRequired": "Phone number is required",
+    "additionalInfo": "Additional information",
+    "emailRequired": "Please enter at least one email",
     "businessHoursFormField": {
       "title": "Open hours",
       "openCheckboxLabel": "Open",
@@ -151,11 +205,240 @@
       }
     },
     "holidayFormField": {
-      "title": "Weekends",
+      "title": "Holidays",
       "day": "Day",
       "month": "Month",
       "year": "Year",
       "addButton": "Add"
+    },
+    "selectType": "Select type",
+    "place": "Place",
+    "networkOfPlaces": "Chain of places",
+    "networkName": "Chain name",
+    "networkNameRequired": "Chain name is required",
+    "createNetwork": "Create chain",
+    "addingToChain": "Adding place to chain: {}"
+  },
+  "placeDetails": {
+    "offersTitle": "Offers",
+    "participateHint": "Scan the QR code at the cafe to participate",
+    "freeCupAvailable": "Free cup available",
+    "buyMoreForFreeNext": "Buy {} more cups, and the next will be free",
+    "cupsLeft": "{} cups left",
+    "buyButton": "Buy",
+    "openHoursTitle": "Open hours",
+    "everyDay": "Every day",
+    "closedShort": "Closed",
+    "weekendsLabel": "Holidays:\n{}",
+    "closedText": "Place is closed",
+    "yourContacts": "Your contacts",
+    "editPlace": "Edit Place"
+  },
+  "qr": {
+    "scanTitle": "Scan QR Code",
+    "errorTitle": "Error",
+    "ok": "OK",
+    "participation": "Participation",
+    "freeCupAvailable": "Free cup available",
+    "apply": "Apply",
+    "buyMoreForFreeNext": "Buy {} more cups, and the next will be free",
+    "cupsLeft": "{} cups left",
+    "startCollecting": "Start collecting cups now",
+    "makeOrder": "Make order",
+    "orderCups": "Order cups",
+    "appliedSuccess": "The offer has been applied successfully!",
+    "showToBartender": "Show this screen to the barista",
+    "noDisplayValue": "No display value.",
+    "test": "Test"
+  },
+  "explore": {
+    "list": "List",
+    "map": "Map",
+    "distanceMeters": "{} m",
+    "distanceKm": "{} km"
+  },
+  "payment": {
+    "title": "Payment",
+    "testPayment": "Test Payment"
+  },
+  "moderation": {
+    "title": "Moderation",
+    "empty": "No pending places or chains for moderation.",
+    "approved": "Approved",
+    "rejected": "Rejected",
+    "accept": "Accept",
+    "reject": "Reject",
+    "idLabel": "ID: {}",
+    "contactLabel": "Contact: {}",
+    "ownerNameLabel": "Owner name: {}",
+    "ownerPhoneLabel": "Owner phone: {}",
+    "editGroupTitle": "Edit Chain",
+    "editGroupName": "Edit Chain Name",
+    "saveGroupName": "Save Chain Name",
+    "groupAdmins": "Chain Administrators",
+    "noAdminsHint": "No administrators added yet. Add at least one administrator before approving the chain.",
+    "addAdmin": "Add Administrator",
+    "noAdminsError": "Add at least one administrator before approving the chain.",
+    "adminsLabel": "Administrators:"
+  },
+  "admin": {
+    "panelTitle": "Admin Panel",
+    "networksTitle": "Chains of places",
+    "placesTitle": "Places",
+    "noPlacesOrNetworks": "No places or chains",
+    "description": "Description",
+    "priceCents": "Price, cents",
+    "quantity": "Quantity",
+    "editPlace": "Edit Place",
+    "placeNav": {
+      "offers": "Offers",
+      "history": "History",
+      "userAccess": "User Access",
+      "qr": "QR"
+    },
+    "groupNav": {
+      "places": "Places",
+      "offers": "Offers",
+      "userAccess": "User Access"
+    },
+    "groupPlaces": {
+      "title": "Places in Chain",
+      "noPlaces": "No places in this chain",
+      "addPlace": "Add Place"
+    },
+    "groupAccess": {
+      "descr_admin": "Full access to manage the chain",
+      "descr_addPlaces": "Can add places to the chain",
+      "descr_viewHistory": "Can view chain history",
+      "descr_editGroup": "Can edit chain information",
+      "descr_createGroup": "Can create new chains"
+    },
+    "profile": {
+      "createPlace": "Create place",
+      "addYourPlace": "Add your place",
+      "moderation": "Moderation",
+      "adminPanel": "Admin panel"
+    },
+    "qr": {
+      "title": "QR code",
+      "downloadPdf": "Download PDF",
+      "saveToGallery": "Save to gallery",
+      "share": "Share",
+      "pdfSaved": "PDF has been saved: {}",
+      "savedToGallery": "QR code saved to gallery",
+      "saveError": "Save error: {}"
+    },
+    "agreement": {
+      "phoneNumber": "Your phone number",
+      "signButton": "I sign the agreements",
+      "title": "Signing Agreements",
+      "note": "To continue working, you need to sign the agreements",
+      "yourData": "Your Data",
+      "readAllAgreements": "I have read all agreements",
+      "downloadEnglish": "Download English version",
+      "downloadBulgarian": "Download Bulgarian version"
+    },
+    "offers": {
+      "noOffers": "No offers",
+      "addNewOffer": "Add new offer",
+      "offerForEachItem": "Offer for each {} item",
+      "promo": "Promo",
+      "hideTitle": "Hide offer",
+      "publishTitle": "Publish offer",
+      "hide": "Hide",
+      "publish": "Publish",
+      "hideConfirm": "Are you sure you want to hide the offer?",
+      "publishConfirm": "Are you sure you want to publish it?",
+      "publishNote": "Once published, the offer will be available to all visitors.",
+      "cancel": "Cancel",
+      "create": {
+        "title": "Add offer",
+        "published": "Published",
+        "publishHint": "You can publish an offer to visitors later at any time",
+        "addOffer": "Add offer",
+        "type": "Type",
+        "descriptionRequired": "Please enter an offer description",
+        "priceRequired": "Please specify the package price in euro cents",
+        "quantityRequired": "The quantity must be specified and must not be less than 2",
+        "descriptionExampleFree": "For example, \"Every third cappuccino is free.\"",
+        "descriptionExamplePaid": "For example, \"10 cappuccino XL.\"",
+        "descriptionExamplePromo": "For example, \"A croissant as a gift\"",
+        "priceHelper": "Cost for the whole package in euro cents",
+        "quantityHelperFree": "If, for example, every third cup is free, enter \"3\"",
+        "quantityHelperPaid": "Number of cups per package",
+        "pricePerCup": "{} € / {} € per cup"
+      }
+    },
+    "history": {
+      "ordersTitle": "Orders",
+      "noOrders": "There are no orders yet",
+      "accept": "Accept",
+      "decline": "Decline",
+      "state": {
+        "created": "Created",
+        "accepted": "Accepted",
+        "declined": "Declined",
+        "unknown": "Unknown"
+      }
+    },
+    "access": {
+      "title": "User Access Management",
+      "addUser": "Add User",
+      "save": "Save",
+      "cancel": "Cancel",
+      "editUserTitle": "Edit User",
+      "addUserTitle": "Add User",
+      "emptyHint": "Here you can add access rights to other users already registered in the application.",
+      "someUsersNotRegistered": "Some users are not registered",
+      "notGranted": "The following users could not be granted access.",
+      "needToCreate": "These users may not have an account yet and need to create one:",
+      "close": "Close",
+      "saved": "Saved",
+      "descr": {
+        "admin": "Access to granting access rights for users",
+        "offers": "Access to edit offers, add them and enable/disable them",
+        "history": "Access to view orders and order history"
+      },
+      "errorEmailAndPermRequired": "Email and at least one permission are required"
     }
+  },
+  "placeComplain": {
+    "title": "Report a Problem",
+    "menuItem": "Complain",
+    "selectReason": "Select reason for complaint",
+    "reasonIncorrectInfo": "Incorrect information",
+    "reasonClosed": "Place is closed",
+    "reasonSpam": "Spam or fake place",
+    "reasonOther": "Other",
+    "submitButton": "Submit Complaint",
+    "successMessage": "Your complaint has been submitted successfully"
+  },
+  "complains": {
+    "title": "Complains",
+    "empty": "No complains found",
+    "placeId": "Place ID",
+    "id": "Complain ID",
+    "additionalInfo": "Additional Information",
+    "markAsProcessed": "Mark as Processed",
+    "userEmail": "User Email",
+    "blockUser": "Block User",
+    "userBlocked": "User Blocked"
+  },
+  "agreements": {
+    "title": "Agreements",
+    "empty": "No agreements found",
+    "id": "Agreement ID",
+    "userId": "User ID",
+    "created": "Created",
+    "signed": "Signed",
+    "notSigned": "Not Signed",
+    "signInfo": "Signature Information",
+    "email": "Email",
+    "phoneNumber": "Phone Number",
+    "userName": "User Name",
+    "signedDate": "Signed Date",
+    "realIp": "IP Address",
+    "userAgent": "User Agent",
+    "requestSign": "Request a sign"
   }
 }
